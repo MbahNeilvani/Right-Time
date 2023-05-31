@@ -112,9 +112,15 @@ a:hover{
     background-color: gray;
     border-radius: 10px;
     position: relative;
+    height: 0;
     right: 28px;
     width: 20%;
     overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open{
+    height: 240px;
 }
 
 .dropdown li{
@@ -172,5 +178,30 @@ footer .foot{
     .toggle{
         display: block;
 
+    }
+
+    .various{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .help ul{
+        list-style: none;
+    }
+
+    #social{
+        display: flex;
+        justify-content: center;
+        margin: 25px 0;
+
+    }
+
+    .help{
+        line-height: 25px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
